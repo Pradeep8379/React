@@ -28,8 +28,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
     {
-        path: '/home',
-        element: [<Navbar></Navbar>,
+        path: '/',
+        element: [<Navbar/>,
         <Hero />,
         <Best />,
         <Featured />,
@@ -37,15 +37,15 @@ const router = createBrowserRouter([
     },
     {
         path: '/search',
-        element: [< Navbar ></Navbar>, <Search></Search>]
+        element: [< Navbar />, <Search/>]
     },
     {
         path: '/about',
-        element: [< Navbar ></Navbar>, <About></About>]
+        element: [< Navbar />, <About/>]
     },
     {
         path: '/contact',
-        element: [< Navbar ></Navbar>, <Contact></Contact>]
+        element: [< Navbar />, <Contact/>]
     },{
         path : '*',
         element :<h1>Page Not Found!</h1>
